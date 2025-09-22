@@ -2,10 +2,10 @@ module alu_tb;
 
   parameter BW = 16; // bitwidth
 
-  logic unsigned [BW-1:0] in_a;
-  logic unsigned [BW-1:0] in_b;
+  logic signed [BW-1:0] in_a;
+  logic signed [BW-1:0] in_b;
   logic             [3:0] opcode;
-  logic unsigned [BW-1:0] out;
+  logic signed [BW-1:0] out;
   logic             [2:0] flags; // {overflow, negative, zero}
 
   // Instantiate the ALU
